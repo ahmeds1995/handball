@@ -1,0 +1,223 @@
+body {
+  font-family: "Noto Kufi Arabic", sans-serif;
+  direction: rtl;
+}
+
+/* Start Upper Nav Style */
+
+.upper-nav {
+  background-color: rgba(250, 250, 250, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 25px 0;
+  color: #222;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 576px) {
+  .upper-nav {
+    font-size: 18px;
+  }
+}
+
+/* End Upper Nav Style */
+
+/* Start Background Style */
+.background {
+  background-image: url(../imgs/ballhand.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.background::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 10;
+}
+
+.background .background-text {
+  position: relative;
+  z-index: 11;
+}
+
+.background .background-text h2 {
+  font-weight: bolder;
+  font-size: 45px;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+@media screen and (max-width: 576px) {
+  .background .background-text h2 {
+    font-size: 40px;
+  }
+}
+
+.background .background-text .move {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.background .background-text .move li {
+  color: #fff;
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+.background .background-text .move li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media screen and (max-width: 576px) {
+  .background .background-text .move li {
+    font-size: 17px;
+  }
+}
+/* End Background Style */
+
+/* Start Champs Style */
+.champs {
+  padding-top: 60px;
+}
+
+.champs h3 {
+  font-size: 35px;
+  font-weight: bold;
+  color: #bd2130;
+  margin-bottom: 25px;
+}
+
+@media screen and (max-width: 576px) {
+  .champs h3 {
+    font-size: 20px;
+  }
+}
+
+.champs .champs-intro {
+  font-size: 22px;
+  width: 90%;
+  color: #222;
+  line-height: 2;
+}
+
+@media screen and (max-width: 576px) {
+  .champs .champs-intro {
+    font-size: 18px;
+  }
+}
+
+.world-champs,
+.local-champs {
+  background: url(../imgs/wc.jpg) no-repeat;
+  background-size: cover;
+  min-height: 450px;
+  position: relative;
+}
+
+.local-champs {
+  background: url(../imgs/lc.jpg) no-repeat;
+  background-size: cover;
+}
+
+.world-champs::after,
+.local-champs::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+}
+
+.world-champs .champion,
+.local-champs .champion {
+  padding: 40px 20px 0;
+  position: relative;
+  z-index: 100;
+}
+
+.world-champs .champion.final,
+.local-champs .champion.final {
+  padding-bottom: 40px;
+}
+
+.world-champs .champion h4,
+.local-champs .champion h4 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.world-champs .champion p,
+.local-champs .champion p {
+  font-size: 20px;
+  color: #eee;
+  width: 85%;
+  line-height: 2;
+}
+
+@media screen and (max-width: 576px) {
+  .world-champs .champion p,
+  .local-champs .champion p {
+    width: 100%;
+  }
+}
+
+/* End Champs Style */
+
+/* Copy Right */
+.copy-right {
+  background-color: #111;
+  color: #fff;
+  padding: 25px 0;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 991px) {
+  .copy-right {
+    font-size: 20px;
+  }
+}
+
+/* Scroll To Top Icon Styling */
+.scroll-to-top {
+  z-index: 10000000;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  cursor: pointer;
+  background-color: #bd2130;
+  font-size: 25px;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+/* End Scroll To Top Icon Styling */
